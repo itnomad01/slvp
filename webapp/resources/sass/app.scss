@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+.vhmax80 {
+    max-height: 80vh;
+}
+
+.vh80 {
+    height: 80vh;
+}
+
+.vhmin80 {
+    min-height: 80vh;
+}
+
+.cbi {
+    background-position: center;
+    background-size: cover;
+}
+
+#bv {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bga {
+    background-color: #ffffff91;
+}

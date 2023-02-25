@@ -1,0 +1,15 @@
+server {
+	listen 127.0.1.2:82;
+	root /var/www/live.example.org-hls/public_html;
+	index index.html index.m3u8;
+	server_name live.example.org;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	
+	location /control {
+        rtmp_control all;
+	add_header Access-Control-Allow-Origin "*";
+    }
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=The Simple Live Video Platform Laravel Queue Worker Daemon
+
+[Service]
+User=www-data
+Group=www-data
+Restart=on-failure
+ExecStart=/usr/bin/php /var/www/live.example.org/artisan queue:work
+ExecReload=/usr/bin/php /var/www/live.example.org/artisan queue:restart
+
+[Install]
+WantedBy=multi-user.target
